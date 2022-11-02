@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Pasere Vasile Daniel and B.A.">
+	<title>Make a deal</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container">
+		<div class="introduction">
+			<h1>Wanna Make a Deal?</h1>
+			<p>There are three doors. Behind two doors there are AWESOME THINGS.<br />Behind one door is a BAD THING.<br />Choose a door...</p>
+		</div>
+		<div class="doors">
+			<div >
+				<img id="one" src="images/door1.png" onclick="changeImage1()" alt="closed door">
+				<img id="first" src="images/door1.1.png" alt="opened door">
+			</div>
+
+			<div>
+				<img id="two" src="images/door2.png" onclick="changeImage2()" alt="closed door">
+				<img id="second" src="images/door2.2.png" alt="opened door">
+			</div>
+
+			<div>
+				<img id="three" src="images/door3.png" onclick="changeImage3()" alt="closed door">
+				<img id="third" src="images/door3.3.png" alt="opened door">
+			</div>
+		</div>
+	</div>
+
+	<script>
+		function changeImage1() {
+            		var image1 = document.getElementById('one');
+            		if (image1.src.match("images/door1.png")) {
+                		image1.src = "images/door1.1.png";
+            		}
+            		else {
+                		image1.src = "images/door1.png";
+            		}
+        	}
+
+		function changeImage2() {
+            		var image2 = document.getElementById('two');
+            		if (image2.src.match("images/door2.png")) {
+                		image2.src = "images/door2.2.png";
+				
+            		}
+            		else {
+                		image2.src = "images/door2.png";
+            		}
+        	}
+
+		function changeImage3() {
+            		var image3 = document.getElementById('three');
+            		if (image3.src.match("images/door3.png")) {
+                		image3.src = "images/door3.3.png";
+            		}
+            		else {
+                		image3.src = "images/door3.png";
+            		}
+        	}
+                  
+	</script>
+</body>
+</html>
